@@ -3,7 +3,7 @@
 
 ## Tampilan awal aplikasi
 
-![Flutter screnshoot](https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/tampilanawal.png)
+![Flutter screnshoot](https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/tampilanwal.png)
 
 ## tampilan searching Flutter Developer
 
