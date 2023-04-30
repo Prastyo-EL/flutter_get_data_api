@@ -1,6 +1,20 @@
-# flutter_get_data_api
+# Result flutter_get_data_api
 
-A new Flutter project.
+
+##Tampilan awal aplikasi
+https://github.com/Prastyo-EL/flutter_get_data_api/blob/assets/tampilanawal.png
+
+##tampilan searching Flutter Developer
+https://github.com/Prastyo-EL/flutter_get_data_api/blob/assets/searchingFlutterDeveloper.png
+
+##Pilih buku paling atas untuk melihat detail
+https://github.com/Prastyo-EL/flutter_get_data_api/blob/assets/pilihpalingatasflutterdeveloper.png
+
+##Cari buku by isn13
+https://github.com/Prastyo-EL/flutter_get_data_api/blob/assets/caribukubyisn13.png
+
+##Tampilan detail buku 
+https://github.com/Prastyo-EL/flutter_get_data_api/blob/assets/tampilangetdetaildata.png
 
 ## Getting Started
 
