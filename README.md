@@ -1,19 +1,24 @@
 # Result flutter_get_data_api
 
 
-##Tampilan awal aplikasi
+## Tampilan awal aplikasi
+
 ![Flutter screnshoot](https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/tampilanawal.png)
 
-##tampilan searching Flutter Developer
+## tampilan searching Flutter Developer
+
 ![Flutter screnshoot](https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/searchingFlutterDeveloper.png)
 
-##Pilih buku paling atas untuk melihat detail
+## Pilih buku paling atas untuk melihat detail
+
 ![Flutter screnshoot](https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/pilihpalingatasflutterdeveloper.png)
 
-##Cari buku by isn13
+## Cari buku by isn13
+
 ![Flutter screnshoot](https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/caribukubyisn13.png)
 
-##Tampilan detail buku 
+## Tampilan detail buku
+
 ![Flutter screnshoot](https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/tampilangetdetaildata.png)
 
 ## Getting Started
