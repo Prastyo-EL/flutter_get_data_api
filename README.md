@@ -2,19 +2,19 @@
 
 
 ##Tampilan awal aplikasi
-https://github.com/Prastyo-EL/flutter_get_data_api/blob/assets/tampilanawal.png
+https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/tampilanawal.png
 
 ##tampilan searching Flutter Developer
-https://github.com/Prastyo-EL/flutter_get_data_api/blob/assets/searchingFlutterDeveloper.png
+https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/searchingFlutterDeveloper.png
 
 ##Pilih buku paling atas untuk melihat detail
-https://github.com/Prastyo-EL/flutter_get_data_api/blob/assets/pilihpalingatasflutterdeveloper.png
+https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/pilihpalingatasflutterdeveloper.png
 
 ##Cari buku by isn13
-https://github.com/Prastyo-EL/flutter_get_data_api/blob/assets/caribukubyisn13.png
+https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/caribukubyisn13.png
 
 ##Tampilan detail buku 
-https://github.com/Prastyo-EL/flutter_get_data_api/blob/assets/tampilangetdetaildata.png
+https://github.com/Prastyo-EL/flutter_get_data_api/blob/main/assets/tampilangetdetaildata.png
 
 ## Getting Started
 
