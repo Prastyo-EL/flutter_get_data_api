@@ -39,26 +39,31 @@ class DetailPage extends StatelessWidget {
                 // const Text("Judul Buku"),
                 Row(
                   children: [
-
+                    Expanded(child:
+                    Padding(
+                        padding: const EdgeInsets.all(0),
+                        child: SizedBox(
+                            child: Expanded(
+                                child: Text(
+                                  '${_controller.details.value.title}',
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 32),
+                                ))
+                        )),
+                    ),
+                    Expanded(child:
                     Padding(
                       padding: const EdgeInsets.all(0),
-                      child: SizedBox(
-                        child: Expanded(
-                          child: Text(
-                              '${_controller.details.value.title}',
-                              style: const TextStyle(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 32),
-                              ))
-          )),Padding(
-            padding: const EdgeInsets.all(0),
-            child: Image.network(
+                      child: Image.network(
                         '${_controller.details.value.image}',
                         height: 100.0,
                         width: 100.0,
                         fit: BoxFit.cover,
                       ),
-          ),
+                    ),
+                    ),
+
           ],
                       ),
 
