@@ -1,10 +1,6 @@
-
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_get_data_api/data/datasource/book_remote_datasource_http.dart';
 import 'package:flutter_get_data_api/data/model/book/book_model.dart';
-import 'package:flutter_get_data_api/data/model/book_response/detail_book_response_model.dart';
 import 'package:flutter_get_data_api/data/repository/detail_repository_imp.dart';
 import 'package:flutter_get_data_api/domain/use_case/get_detail_use_case.dart';
 import 'package:flutter_get_data_api/presentation/screens/detail/controller/detail_controller.dart';
@@ -26,17 +22,16 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detail Book'),
+        title: const Text('Detail Book'),
       ),
       body: GetBuilder<DetailController>(
         init: _controller,
           initState: (state) => _controller.getDetailBook(detail.isbn13 ?? ''),
         builder: (context) {
-          return ClipRRect(
+          return SingleChildScrollView(
             child: Column(
               // mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                // const Text("Judul Buku"),
                 Row(
                   children: [
                     Expanded(child:
@@ -77,7 +72,7 @@ class DetailPage extends StatelessWidget {
                           child: Expanded(
                             child: Row(
                               children: [
-                                Expanded(child: Text('Subititle')),
+                                const Expanded(child: Text('Subititle')),
                                 Expanded(child: Text(
                                   '${_controller.details.value.subtitle}')),
           ],
@@ -89,7 +84,7 @@ class DetailPage extends StatelessWidget {
                             child: Expanded(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Text('Authors')),
+                                    const Expanded(child: Text('Authors')),
                                     Expanded(child: Text(
                                         '${_controller.details.value.authors}')),
 
@@ -102,7 +97,7 @@ class DetailPage extends StatelessWidget {
                             child: Expanded(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Text('Publisher')),
+                                    const Expanded(child: Text('Publisher')),
                                     Expanded(child: Text(
                                         '${_controller.details.value.publisher}')),
 
@@ -115,7 +110,7 @@ class DetailPage extends StatelessWidget {
                             child: Expanded(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Text('Language')),
+                                    const Expanded(child: Text('Language')),
                                     Expanded(child: Text(
                                         '${_controller.details.value.language}')),
 
@@ -128,7 +123,7 @@ class DetailPage extends StatelessWidget {
                             child: Expanded(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Text('Pages')),
+                                    const Expanded(child: Text('Pages')),
                                     Expanded(child: Text(
                                         '${_controller.details.value.pages}')),
 
@@ -141,7 +136,7 @@ class DetailPage extends StatelessWidget {
                             child: Expanded(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Text('Year')),
+                                    const Expanded(child: Text('Year')),
                                     Expanded(child: Text(
                                         '${_controller.details.value.year}')),
 
@@ -154,7 +149,7 @@ class DetailPage extends StatelessWidget {
                             child: Expanded(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Text('Rating')),
+                                    const Expanded(child: Text('Rating')),
                                     Expanded(child: Text(
                                         '${_controller.details.value.rating}')),
 
@@ -167,7 +162,7 @@ class DetailPage extends StatelessWidget {
                             child: Expanded(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Text('Description')),
+                                    const Expanded(child: Text('Description')),
                                     Expanded(child: Text(
                                         '${_controller.details.value.desc}')),
 
@@ -180,17 +175,21 @@ class DetailPage extends StatelessWidget {
                             child: Expanded(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Text('Price')),
+                                    const Expanded(child: Text('Price')),
                                     Expanded(child: Text(
                                         '${_controller.details.value.price}')),
 
                                   ],
                                 ))),
                       ),
+
           ],
           )
+
           ],
+
           )
+
           );
         },
       ),

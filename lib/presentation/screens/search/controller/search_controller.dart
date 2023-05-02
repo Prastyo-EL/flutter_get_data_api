@@ -7,11 +7,10 @@ import 'package:get/get.dart';
 import 'package:http/http.dart' as client;
 import '../../../../domain/use_case/get_search_use_case.dart';
 
-class searchController extends GetxController{
-  final GetSearchBookUseCase _getSearchBookUseCase;
+class CariController extends GetxController{
   //
   //
-  searchController(this._getSearchBookUseCase);
+  CariController(GetSearchBookUseCase getSearchBookUseCase);
   //
     Rx<List<Book>> searchBooks = Rx([]);
     //Rx<TextEditingController> searchController=Rx(TextEditingController());
@@ -30,22 +29,5 @@ class searchController extends GetxController{
     } catch (error, stacktrace) {
       log('Error on GetBook $error', stackTrace: stacktrace);
         }
-      //   final url = await _getSearchBookUseCase.call(query);
-      //   if(url!=null){
-      //     searchBooks(url.books);
-      //     update();
-      //   }
-      //
-      //   }
-      //
-      //
     }
   }
-//
-// import 'package:get/get_state_manager/src/simple/get_controllers.dart';
-//
-// class SearchController extends GetxController{
-//   void getSearchBook(String isbn13){
-//
-//   }
-// }

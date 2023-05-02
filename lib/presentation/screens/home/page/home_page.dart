@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_get_data_api/data/datasource/book_remote_datasource_http.dart';
 import 'package:flutter_get_data_api/data/model/book/book_model.dart';
-import 'package:flutter_get_data_api/data/model/book_response/detail_book_response_model.dart';
-import 'package:flutter_get_data_api/data/repository/detail_repository_imp.dart';
-import 'package:flutter_get_data_api/domain/use_case/get_detail_use_case.dart';
 import 'package:flutter_get_data_api/presentation/screens/detail/page/detail_page.dart';
 import 'package:flutter_get_data_api/presentation/screens/home/controller/home_controller.dart';
 import 'package:flutter_get_data_api/data/repository/book_repository_imp.dart';
@@ -22,21 +19,8 @@ final _controller = HomeController(
   GetBookUseCase(
     BookRepositoryImpl(
       BookRemoteDatasourceHttp())),
-        (GetDetailUseCase(
-            DetailRepositoryImpl(
-                BookRemoteDatasourceHttp())))
 );
 
-// void navigateSearch(BuildContext context){
-//   Navigator.push(
-//     context,
-//     MaterialPageRoute(
-//       builder: (context) => SearchPage(
-//           query: _controller.searchController.value.text,
-//       ),
-//     ),
-//   );
-// }
   void navigateSearch(BuildContext context){
     Navigator.push(
         context,
@@ -63,16 +47,19 @@ void navigateToDetail(BuildContext context, Book book){
         builder: (cont) {
           return Column(
             children: [
-               TextField(
-                controller: _controller.searchController.value,
-                 onChanged: (value) => _controller.getBookV2(),
-                 decoration: InputDecoration(
-                   suffixIcon: IconButton(
-                       onPressed: () => navigateSearch(context),
-                       icon: const Icon(Icons.search),
+               Padding(
+                 padding: const EdgeInsets.all(10.0),
+                 child: TextField(
+                  controller: _controller.searchController.value,
+                   onChanged: (value) => _controller.getBookV2(),
+                   decoration: InputDecoration(
+                     suffixIcon: IconButton(
+                         onPressed: () => navigateSearch(context),
+                         icon: const Icon(Icons.search),
+                     ),
                    ),
-                 ),
               ),
+               ),
               // Text(_controller.searchController.value.text),
               const SizedBox(height: 32),
               Expanded(
@@ -89,10 +76,10 @@ void navigateToDetail(BuildContext context, Book book){
               navigateToDetail(context,book),
             child: Row(children: [
             Container(
-              child: Image.network('${book.image}'),
-            height: 80,
+              height: 80,
             width: 80,
             color: Colors.cyan,
+              child: Image.network('${book.image}'),
             ),
             const SizedBox(width: 8),
             Expanded(

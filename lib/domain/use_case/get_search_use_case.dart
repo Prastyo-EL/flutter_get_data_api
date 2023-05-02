@@ -3,9 +3,9 @@ import 'package:flutter_get_data_api/data/model/book_response/search_book_respon
 import '../repository/search_repository.dart';
 
 class GetSearchBookUseCase{
-  final SearchRepository _repository;
+  final SearchRepository _searchRepository;
 
-  const GetSearchBookUseCase(this._repository);
+  const GetSearchBookUseCase(this._searchRepository);
 
-  Future<SearchBookByNameResponse?> call(String isbn13) async => await _repository.getSearch(isbn13);
+  Future<SearchBookByNameResponse?> call(String isbn13) async => await _searchRepository.getSearch(isbn13);
 }

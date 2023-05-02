@@ -2,19 +2,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_get_data_api/data/datasource/book_remote_datasource_http.dart';
 import 'package:flutter_get_data_api/data/model/book/book_model.dart';
-import 'package:flutter_get_data_api/data/model/book_response/detail_book_response_model.dart';
 import 'package:flutter_get_data_api/domain/use_case/get_search_use_case.dart';
 import 'package:flutter_get_data_api/data/repository/search_repository_imp.dart';
 import 'package:flutter_get_data_api/presentation/screens/detail/page/detail_page.dart';
 import 'package:flutter_get_data_api/presentation/screens/search/controller/search_controller.dart';
 import 'package:get/get.dart';
 
-import 'package:http/http.dart' as client;
 class SearchPage extends StatelessWidget {
   final String query;
     SearchPage({super.key, required this.query});
 
-  final _controller = searchController(
+  final _controller = CariController(
       GetSearchBookUseCase(
           SearchRepositoryImpl(
               BookRemoteDatasourceHttp())));
@@ -29,7 +27,7 @@ void navigationToDetail(BuildContext context,Book book){
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Search Book'),
+        title: const Text('Search Book'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -54,10 +52,10 @@ void navigationToDetail(BuildContext context,Book book){
                                   navigationToDetail(context,book),
                               child: Row(children: [
                                 Container(
-                                  child: Image.network('${book.image}'),
                                   height: 80,
                                   width: 80,
                                   color: Colors.cyan,
+                                  child: Image.network('${book.image}'),
                                 ),
                                 const SizedBox(width: 8),
                                 Expanded(

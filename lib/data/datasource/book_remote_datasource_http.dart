@@ -5,7 +5,6 @@ import 'package:flutter_get_data_api/data/model/book_response/book_response_mode
 import 'package:flutter_get_data_api/data/model/book_response/detail_book_response_model.dart';
 import 'package:flutter_get_data_api/data/model/book_response/search_book_response_model.dart';
 import 'package:http/http.dart' as client;
-
 import 'package:flutter_get_data_api/constants/constants.dart';
 
 class BookRemoteDatasourceHttp implements BookRemoteDatasource{
@@ -22,8 +21,8 @@ class BookRemoteDatasourceHttp implements BookRemoteDatasource{
      }
    }catch (error, stacktrace){
      log('Error on Get Book $error', stackTrace: stacktrace);
-     return null;
    }
+   return null;
   }
 
 
@@ -39,8 +38,8 @@ class BookRemoteDatasourceHttp implements BookRemoteDatasource{
       }
     }catch (error, stacktrace){
       log('Error on Get Book $error', stackTrace: stacktrace);
-      return null;
     }
+    return null;
   }
 
   @override
@@ -55,8 +54,8 @@ class BookRemoteDatasourceHttp implements BookRemoteDatasource{
       }
     }catch (error, stacktrace){
       log('Error on Get Book $error', stackTrace: stacktrace);
-      return null;
     }
+    return null;
   }
 
 }

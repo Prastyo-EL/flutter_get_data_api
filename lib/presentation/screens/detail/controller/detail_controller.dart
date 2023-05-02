@@ -1,7 +1,5 @@
 import 'dart:convert';
 import 'dart:developer';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_get_data_api/domain/use_case/get_detail_use_case.dart';
 import 'package:get/get.dart';
 
@@ -12,9 +10,9 @@ import '../../../../data/model/book_response/detail_book_response_model.dart';
 
 class DetailController extends GetxController{
 
-  final GetDetailUseCase _getDetailUseCase;
+  // final GetDetailUseCase _getDetailUseCase;
 
-  DetailController(this._getDetailUseCase);
+  DetailController(GetDetailUseCase getDetailUseCase);
 
   Rx<DetailBookByUrlResponse> details = Rx(DetailBookByUrlResponse());
   // Rx<TextEditingController> detailController=Rx(TextEditingController());
