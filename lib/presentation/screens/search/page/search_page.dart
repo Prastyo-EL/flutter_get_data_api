@@ -28,7 +28,9 @@ void navigationToDetail(BuildContext context,Book book){
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Search Book'),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: GetBuilder(
